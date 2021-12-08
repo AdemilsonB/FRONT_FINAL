@@ -1,1 +1,19 @@
-<p>cadastrar-funcionario works!</p>
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Cadastrar Funcionario</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <mat-form-field class="input" id="nome">
+            <mat-label for="nome">Nome:</mat-label>
+            <input matInput type="text" name="nome" [(ngModel)]="nome" />
+        </mat-form-field>
+        <mat-form-field class="input" id="idade">
+            <mat-label for="descricao">Idade:</mat-label>
+            <input
+                matInput type="text" name="idade" [(ngModel)]="idade"
+            />
+        </mat-form-field>
+    <button mat-raised-button color="warn" (click)="cadastrar()">
+        Cadastrar
+    </button>
+</mat-card>
